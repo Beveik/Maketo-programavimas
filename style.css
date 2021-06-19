@@ -74,7 +74,7 @@ padding-bottom: 100px;
     width: auto;
     display: flex;
     /* position: absolute; */
-    padding-left: 274px;
+    padding-left: 14.4211rem;
     float:left;
     padding-right: 8.4211rem;
     /* height: 151px; */
@@ -94,8 +94,8 @@ a:visited{
     text-decoration: none;
 }
 .headline:hover {
-    cursor:pointer;
-    border-bottom-style: 3px solid white;
+    cursor: pointer;
+    border-bottom: 3px white solid ;
     padding-bottom: 10px;
 }
 .language:hover {
@@ -103,10 +103,10 @@ a:visited{
     color:grey;
 
 }
-.search {
-font-size: 19px;
+/* .search {
+font-size: 1rem;
 margin: center;
-}
+} */
 p.headline {
     padding-right: 2.6316rem;
 }
