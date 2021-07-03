@@ -131,7 +131,7 @@ h1 {
 font-size: 1rem;
 margin-top: -11px;
     }
-.button1 {
+.button-1 {
     margin-top: 25px;
 }
 
@@ -146,6 +146,10 @@ margin-top: -11px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+}
+
+.button-2:hover { 
+    cursor:pointer;
 }
 
 .kvadratai {
@@ -319,9 +323,6 @@ border-top: 1px solid #6C6C6C;
       } */
       /* @media screen and (max-width: 1575px) {
 
-        
-        }
-
         .header {
             padding-top: 0.125rem;
             padding-bottom: 0.125rem;
@@ -331,8 +332,8 @@ border-top: 1px solid #6C6C6C;
             flex-direction: column;
         }
 
-        /* .area {
-        
+         .area {
+            flex-direction: column;
         } 
 
         .toggle {
@@ -352,4 +353,4 @@ border-top: 1px solid #6C6C6C;
         }
 
 
-    } */
+    }  */
