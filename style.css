@@ -19,7 +19,6 @@
 .container-all {
     font-family: Popins-regular;
     width: 100%;
-    /* height: 244.3158rem; */
     position:absolute;
     top: 0%;
 
@@ -40,8 +39,6 @@ position: relative;
 
 .bottom-container {
     width: 100%;
-    /* height: 1647.9992px; */
-    /* background-color: beige; */
     margin-top: 351px;
     color:#060606;;
     }
@@ -56,11 +53,10 @@ padding-bottom: 3.3158rem;
      height: 1.2632rem;
      
     }
-.menu{ 
-    /* position:fixed; */
+.menu { 
+
     width: auto;
     display: flex;
-    /* position: absolute; */
     padding-left: 14.4211rem;
     float:left;
     padding-right: 8.4211rem;
@@ -87,18 +83,21 @@ a:link, a:visited  {
     padding-bottom: 0.5263rem;
 
 }
-language:hover {
-    /* cursor:pointer; */
-    color: green;
-}
+
 
 li.headline {
     padding-right: 2.6316rem;
 }
-li.language{
+li.language {
     float: right;
     padding-left: 2.6316rem;
+    margin-top: 0.8947rem;
     
+}
+.language a:hover {
+    color: #6C6C6C;
+
+ 
 }
 .square {
     display: flex;
@@ -108,8 +107,6 @@ li.language{
     float:right;
     width: 3.4211rem;
     height: 3.4211rem;
-    /* margin-top: 43px; */
-    /* margin-bottom: 43px;  */
     margin-left: 2.6316rem;
     position: relative;
 }
@@ -301,7 +298,7 @@ float: left;
         margin-left: 1.7542rem;
         margin-right: 1.7542rem;
         padding-top: 2.8421rem;
-border-top: 0.0526rem solid #6C6C6C;
+border-top: 0.0526rem solid #a09e9e;
     }
     .left-3 h5 {
         margin-top: 0.5263rem;
@@ -362,7 +359,7 @@ border-top: 0.0526rem solid #6C6C6C;
 }
     @media screen and (max-width: 1895px) {
         .container-padding {
-            padding:30px;
+            padding:1.5789rem;
         }
 
         .menu { 
@@ -379,13 +376,7 @@ width: 100%;
 }
       
       @media screen and (max-width: 1550px) {
-        /* .text-right, .text-left {
-            display: block;
-            margin: 0;
-            padding-top: 0;
-            margin-top: 0;
-        
-        } */
+       
 .text-left {
     width: 45%;
       }
@@ -406,7 +397,7 @@ h3 {
     margin-left: 10rem;
     }
 }
-     @media screen and (max-width: 1158px) {
+     @media screen and (max-width: 1220px) {
         .column-left, .column-center, .column-right{
             height: 20rem;
         }
@@ -415,8 +406,10 @@ h3 {
         }
 body {
     width: 100%;
-    /* margin-left: 10px;
-    margin-right: 30px; */
+
+}
+.text-box {
+    margin-top: 5.9474rem;  
 }
 .text-left {
     width: 100%;
@@ -429,7 +422,7 @@ body {
 h1 {
     font-size: 56px;
 }
-.kvadratai1{
+.kvadratai1 {
     margin-top: -60rem;
     width: 100%;
     height: auto;
@@ -456,17 +449,44 @@ margin-top: 3.2105rem;
     width: 100%;
 }
         .header {
-
+           font-size: 1rem;
+            padding-bottom: 0rem;
             position: absolute;
-            width: 100%;
+            width: 90%;
             top: 0;
             flex-direction: column;
         }
 
-         .header {
-            flex-direction: column;
-        } 
+        .headline, .language {
+            width: 100%;
+            padding-top: 0.5rem;
+            float: left;
+            position:relative;
+            
+        }
+        .headline a:hover, .language a:hover {
+            width: 90%;
+            color: #6C6C6C;
+        }
+        .headline:hover {
+            border: 0;
+        }
+        
+        .language {
+            margin-left: 0;
+            bottom: 0.7895rem;
+        }
 
+        li.headline {
+
+                padding-right: 0;
+        }
+        li.language {
+            float: left;
+            padding-left: 0;
+         margin-top: 0;
+            
+        }
         .toggle {
             display:block;
             position: absolute;
@@ -474,17 +494,22 @@ margin-top: 3.2105rem;
             top: 0.5rem;
             color: white;
         }
-
-        .menu, .language, .square {
+        .list {
             display:none;
             flex-flow: column wrap;
         }
 
-        .menu.active, .language.active, .square.active {
-            display:block;
+        .list.active {
+            display:flex;
+            background-color: #a09e9e;
+            float: left;
+
         }
-
-
+.square {
+    margin-left: 2rem;
+    padding-top: 0;
+}
+    
     }  
     
     @media screen and (max-width: 500px) {
@@ -506,4 +531,5 @@ margin-top: 3.2105rem;
         }
         .right {
             width: 6.9474rem;
+    }
     }
